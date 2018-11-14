@@ -11,8 +11,6 @@ RUN yum update -y; \
 COPY conf/lighttpd.conf /etc/lighttpd/
 COPY html/index.html /var/www/servers/default/
 
-RUN ls /var/www/servers/default/
-
 EXPOSE 80/tcp
 EXPOSE 443/tcp
 
