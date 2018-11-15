@@ -9,7 +9,6 @@ RUN yum update -y; \
   systemctl enable lighttpd
 
 COPY conf/lighttpd.conf /etc/lighttpd/
-COPY html/index.html /var/www/servers/default/
 
 EXPOSE 80/tcp
 EXPOSE 443/tcp
